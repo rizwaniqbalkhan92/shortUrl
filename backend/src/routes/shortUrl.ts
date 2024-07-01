@@ -1,10 +1,11 @@
 import express from 'express';
+import { createUrl,getAllUrl,getUrl,deleteUrl} from '../Controller/shortUrl';
 
 const router = express.Router();
 
-router.get('/getShortUrl');
-router.post('/postShortUrl');
-router.get('/shortUrl/:id');
-router.delete('/deleteShortUrl/:id');
+router.get('/allShortUrl',getAllUrl);
+router.post('/createShortUrl',createUrl);
+router.get('/shortUrl/:id',getUrl);
+router.delete('/deleteShortUrl/:id',deleteUrl);
 
 export default router

@@ -5,7 +5,7 @@ import cors from 'cors';
 import shortsUrl from './routes/shortUrl'
 dotenv.config()
 const app= express();
-const PORT =  process.env.PORT || 5000 
+const PORT =  process.env.PORT || 5001
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
@@ -15,7 +15,7 @@ app.use(cors({
     origin:`${process.env.LOCAL_URL}`,
     credentials:true
 }))
-app.listen(5000,()=>{
+app.listen(5001,()=>{
     console.log("Server Runing Successfully....!!!"+PORT);
     dbConnection()
 
