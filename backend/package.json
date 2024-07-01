@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "start": "npx tsc && node ./dist/server.js",
     "dev": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "author": "rizwan iqbal khan",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jest": "^29.7.0",
     "mongoose": "^8.4.4",
     "nanoid": "^3.0.0",
     "nodemon": "^3.1.4"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/mongoose": "^5.11.97",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
